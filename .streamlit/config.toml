@@ -1,0 +1,5 @@
+[theme]
+backgroundColor="#001d42" # 黒
+secondaryBackgroundColor="#696969" # ダークグレー
+textColor="#FFFFFF" # 白
+font='Roboto'
