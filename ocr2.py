@@ -46,8 +46,8 @@ if image is not None:
         #ocr処理
         result = reader.readtext(np.array(input_image)) #抽出したテキストをnp.arrayによってnumpyの配列に変換(Supporting format = string(file path or url), bytes, numpy array)
         text_word = np.stack(result) #numpyの配列をstrackによって結合して表に変換する
-        st.markdown("## 🌟　`読み取り結果`　🌟 ")
-        st.write(text_word[:,1],width=700) #表の中で文章が表示されている列のみを([:,1])表示させる
+        st.markdown("## 🌟`読み取り結果`🌟 ")
+        st.write(text_word[:,1]) #表の中で文章が表示されている列のみを([:,1])表示させる
         st.snow() #完了した時に雪を降らせる
 else:
     st.write("画像をアップロードしてください(200MBまで)")
