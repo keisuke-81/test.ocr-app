@@ -5,16 +5,17 @@ import numpy as np #Image Processing
 
 
 #title
-st.title("OCRアプリ  画像からテキスト抽出")
+st.title("OCRアプリ ")
 
 #subtitle
-st.markdown("## 光学式文字認識 - 使用 `英語、日本語対応`")
+st.markdown("### 〜画像からテキスト抽出〜")
+st.markdown("### 光学式文字認識 - 使用 `英語、日本語対応`")
 
 st.markdown("")
 
 #写真をアップロード
 image = st.file_uploader(label = "ここへドラグアンドドロップもしくはクリックしてファイル選択で画像をアップロード",type=['png','jpg','jpeg'])
-image_dog = Image.open('dog.png')
+#image_dog = Image.open('dog.png')
 
 @st.cache
 def load_model(): #ocr読み取りの
@@ -51,7 +52,7 @@ if image is not None:
         st.snow() #完了した時に雪を降らせる
 else:
     st.write("画像をアップロードしてください(200MBまで)")
-    st.image(image_dog,width=280)
+    #st.image(image_dog,width=150)
 
 
 
