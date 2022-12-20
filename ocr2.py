@@ -52,7 +52,7 @@ if image is not None:
 else:
     st.write("画像をアップロードしてください(200MBまで)")
     st.image(image_dog,width=280)
-#st.caption("Made with ❤️ by @1littlecoder")
+
 
 
 
