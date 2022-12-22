@@ -52,7 +52,7 @@ if image is not None:
         st.write(text_word[:,1]) #表の中で文章が表示されている列のみを([:,1])表示させる
         st.snow() #完了した時に雪を降らせる
 else:
-    st.write("サイドバー画像をアップロードしてください(200MBまで)")
+    st.write("サイドバーで画像をアップロードしてください(200MBまで)")
     st.write("アップロードした画像と抽出されたテキストはここに表示されます")
     #st.image(image_dog,width=150)
 
